@@ -1,0 +1,358 @@
+.map-button {	
+    width: 74.25px;
+    height: 74.5px;
+    float: left;
+    background-color:Transparent ;   
+    margin: 1px;
+	padding: none;
+	border: none;
+	outline: 2px solid black;
+}
+
+invisible {
+    width: 74.25px;
+    height: 74.5px;
+    float: left;
+    background-color:Transparent;   
+    margin: 1px;
+	/*cursor: not-allowed; */
+}
+
+.map-button:hover {
+	background: blue;
+	opacity: 0.6;
+	}
+
+/*.map-button:focus {background: red}*/
+
+.map-button-focus {	
+    width: 74.25px;
+    height: 74.5px;
+    float: left;
+    background: red;
+	opacity: 0.6;
+    margin: 1px;
+	padding: none;
+	border: none;
+	outline: 2px solid black;
+}
+
+.map-button-clicked {	
+    width: 74.25px;
+    height: 74.5px;
+    float: left;
+    background: #f2f2f2;
+	opacity: 0.7;
+    margin: 1px;
+	padding: none;
+	border: none;
+	outline: 2px solid black;
+}
+
+li {
+        display: inline-block;
+        background:none;
+}
+
+.dropdown-checkbox-toggle {
+	width: 160px;
+	height: 35px;
+}
+button .dropdown-checkbox-toggle:hover {background: none}
+
+button .dropdown-checkbox-toggle:focus {background: none}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.button-container {
+    width: 690px;
+	height: 769.5px;
+    background-image: url('../images/Sea Boundry Grid.png');   
+    overflow-y: auto;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+.pull-left {
+	
+	background: #fff; 
+	cursor: pointer; 
+	padding: 5px 10px; 
+	border: 1px solid #ccc; 
+	width: 350px;
+	float: left
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+<
+
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #99e6ff;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #99e6ff;
+    color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+.dropdown-checkbox {
+  position: relative;
+}
+.dropdown-checkbox.dropdown.open .caret {
+  border-top-color: black !important;
+}
+.dropdown-checkbox .dropdown-checkbox-content {
+  display: none;
+  position: absolute;
+  background: white;
+  z-index: 1000;
+  top: 100%;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  border-top: 1px solid #777777;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dropdown-checkbox .dropdown-checkbox-content li .layout {
+  padding: 0px 10px;
+}
+.dropdown-checkbox .dropdown-checkbox-content li .layout:hover {
+  background: #337ab7;
+  color: white;
+  cursor: pointer;
+}
+.dropdown-checkbox .dropdown-checkbox-content li .layout input[type=checkbox] {
+  float: left;
+  height: 25px;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+.dropdown-checkbox .dropdown-checkbox-content li .layout label {
+  display: block;
+  white-space: nowrap;
+  line-height: 25px;
+  padding-left: 30px;
+  margin-bottom: 0px;
+  height: 25px;
+}
+.dropdown-checkbox .dropdown-checkbox-content .maxitems {
+  margin: 0;
+}
+.dropdown-checkbox.open .dropdown-checkbox-content {
+  display: block;
+}
+.dropdown-checkbox .dropdown-checkbox-header {
+  min-width: 245px;
+  background-color: #337ab7;
+  padding: 5px 20px;
+  border-radius: 4px 4px 0px 0px;
+}
+.dropdown-checkbox .dropdown-checkbox-header .search {
+  margin: 0;
+}
+.dropdown-checkbox .dropdown-checkbox-header .checkbox-all {
+  margin-right: 10px;
+}
+.dropdown-checkbox ul.dropdown-checkbox-menu {
+  margin: 0;
+  display: block;
+  padding: 0;
+  list-style: none;
+  padding: 5px 10px 5px 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: visible;
+}
+.dropdown-checkbox ul.dropdown-checkbox-menu li {
+  padding: 0;
+  display: block;
+  margin: 0;
+  list-style: none;
+}
+
+.dropdown-menu > li > b {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+}
+.dropdown-menu > li > b:hover,
+.dropdown-menu > li > b:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+.dropdown-menu > .active > b,
+.dropdown-menu > .active > b:hover,
+.dropdown-menu > .active > b:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #337ab7;
+  outline: 0;
+}
+.dropdown-menu > .disabled > b,
+.dropdown-menu > .disabled > b:hover,
+.dropdown-menu > .disabled > b:focus {
+  color: #777;
+}
+.dropdown-menu > .disabled > b:hover,
+.dropdown-menu > .disabled > b:focus {
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.open > b {
+  outline: 0;
+}
+
+.c1_code {	
+    width: 74.25px;
+    height: 74.5px;    
+    background-color:#33ff33 ;   
+    margin: 1px;
+	padding: none;
+	border: none;
+	outline: 2px solid black;
+}
+.c2_code {	
+    width: 74.25px;
+    height: 74.5px;    
+    background-color:#ffff33 ;   
+    margin: 1px;
+	padding: none;
+	border: none;
+	outline: 2px solid black;
+}
+.c3_code {	
+    width: 74.25px;
+    height: 74.5px;   
+    background-color:#ff0000 ;   
+    margin: 1px;
+	padding: none;
+	border: none;
+	outline: 2px solid black;
+}

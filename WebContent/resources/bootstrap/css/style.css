@@ -1,0 +1,32 @@
+.button-container {
+    width: 770px;
+    background-image: url('Sea Boundry Grid.png');   
+    overflow-y: auto;
+}
+
+.button-container > visible {
+    width: 76px;
+    height: 77px;
+    float: left;
+    background: ;   
+    margin: 0.5px;
+}
+
+.button-container > invisible {
+    width: 76px;
+    height: 77px;
+    float: left;
+    background: ;   
+    margin: 0.5px;
+	cursor: not-allowed;
+}
+
+.button-container > visible:hover {background: #3e8e41}
+
+.background {
+    width: 200px;
+    height: 200px;
+    background-image: url('Sea Boundry Grid.png');
+    position: absolute;
+    z-index: 1;
+}
